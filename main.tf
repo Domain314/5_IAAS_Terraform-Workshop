@@ -1,8 +1,8 @@
 provider "aws" {
   region = "us-east-1"
-  access_key = secrets.AWS_ACCESS_KEY
-  secret_key = secrets.AWS_SECRET_KEY
-  token = secrets.AWS_TOKEN
+  access_key = env.AWS_ACCESS_KEY_ID
+  secret_key = env.AWS_SECRET_ACCESS_KEY
+  token = env.AWS_SESSION_TOKEN
 }
 
 # Create a VPC
