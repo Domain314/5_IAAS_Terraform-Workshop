@@ -162,3 +162,5 @@ resource "aws_lb_target_group_attachment" "web_tga" {
 output "lb_dns_name" {
   value = aws_lb.web_lb.dns_name
 }
+
+# end
